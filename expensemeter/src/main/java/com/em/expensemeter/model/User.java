@@ -20,6 +20,7 @@ import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
 import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 @JsonAutoDetect
 @Entity
@@ -35,7 +36,8 @@ public class User implements Serializable {
 
 	@Column(name = "username")
 	private String userName;
-
+	
+	@JsonIgnore
 	@Column(name = "password")
 	private String password;
 
