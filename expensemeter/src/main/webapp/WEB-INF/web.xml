@@ -28,7 +28,7 @@
 
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/API/*</url-pattern>
+		<url-pattern>/api/*</url-pattern>
 	</servlet-mapping>
 
 	<filter>
